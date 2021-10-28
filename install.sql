@@ -26,7 +26,7 @@ CREATE PROCEDURE file_dirlist_full (IN a ANY)
 
 -- Install attach_from_csv_dir() procedure for attaching all CSVs listed in file_dirlist_full() to a virtual SQL table
 DROP PROCEDURE attach_from_csv_dir;
-CREATE PROCEDURE attach_from_csv_dir (IN tb VARCHAR, IN dir VECTOR, in delimiter VARCHAR, in newline VARCHAR, in esc VARCHAR, in skip_rows int, in pkey_columns any := null)
+CREATE PROCEDURE attach_from_csv_dir (IN tb VARCHAR, IN dir ANY, in delimiter VARCHAR, in newline VARCHAR, in esc VARCHAR, in skip_rows int, in pkey_columns any := null)
     {
     declare f VARCHAR;
 
