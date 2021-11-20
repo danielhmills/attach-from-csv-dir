@@ -1,5 +1,5 @@
 # attach_from_csv_dir
-An extension of Virtuoso Universal Server's attach_from_csv() function,  that reduces multiple CSVs to a single virtual table
+An extension of Virtuoso Universal Server's [attach_from_csv()](http://docs.openlinksw.com/virtuoso/fn_attach_from_csv/) function,  that reduces multiple CSVs to a single virtual table
 
 # Function
 attach_from_csv_dir(table,directory,delimiter,newline,escape,skip_rows,primary_key)
